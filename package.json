@@ -1,0 +1,24 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:ch:headed": "npx playwright test --headed --project=chromium --reporter=line",
+    "test:fi:headed": "npx playwright test --headed --project=firefox --reporter=line",
+    "test:web:headed": "npx playwright test --headed --project=webkit --reporter=line",
+    "test:ch:headless": "npx playwright test --project=chromium --reporter=line",
+    "test:fi:headless": "npx playwright test --project=firefox --reporter=line",
+    "test:web:headless": "npx playwright test --project=webkit --reporter=line"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.12.4"
+  },
+  "dependencies": {
+    "unique-names-generator": "^4.7.1"
+  }
+}
